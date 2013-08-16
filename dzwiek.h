@@ -1,7 +1,7 @@
 #ifndef dzwiek_h
 #define dzwiek_h
 
-#include <SFML\Audio.hpp>
+#include <SFML/Audio.hpp>
 
 class dzwiek
 {

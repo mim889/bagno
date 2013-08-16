@@ -1,7 +1,7 @@
 #ifndef czas_h
 #define czas_h
 
-#include <SFML\System.hpp>
+#include <SFML/System.hpp>
 class czas
 {
 

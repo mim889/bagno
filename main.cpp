@@ -10,8 +10,6 @@ using namespace std;
 
 int main()
 {	
-	
-
 	silnik nowa_gra;
 	nowa_gra.uruchom();
 	

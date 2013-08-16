@@ -28,7 +28,7 @@ public:
 	//4. Koniec
 	sf::Event zdarzenie_okna;
 	
-	zdarzenie::zdarzenie();
+    zdarzenie();
 	int obsluz_zdarzenie(ekran &ekran_glowny);
 	int zwroc_opcja_gry();
 	void ustaw_opcja_gry(int nr_opcji);

@@ -11,14 +11,13 @@ SOURCES += \
     pole_plus.cpp \
     plansza.cpp \
     menu.cpp \
-    main.c \
     komunikaty.cpp \
     grafika.cpp \
     gracz.cpp \
     ekran.cpp \
     dzwiek.cpp \
     czas.cpp \
-    Bagno.cpp
+    main.cpp
 
 OTHER_FILES += \
     Thumbs.db \
@@ -50,3 +49,13 @@ HEADERS += \
     dzwiek.h \
     czas.h
 
+
+unix:!macx: LIBS += -L$$PWD/../../Pobrane/SFML-2.0/lib/ -lsfml-audio
+unix:!macx: LIBS += -L$$PWD/../../Pobrane/SFML-2.0/lib/ -lsfml-graphics
+unix:!macx: LIBS += -L$$PWD/../../Pobrane/SFML-2.0/lib/ -lsfml-network
+unix:!macx: LIBS += -L$$PWD/../../Pobrane/SFML-2.0/lib/ -lsfml-system
+unix:!macx: LIBS += -L$$PWD/../../Pobrane/SFML-2.0/lib/ -lsfml-window
+
+
+INCLUDEPATH += $$PWD/../../Pobrane/SFML-2.0/include
+DEPENDPATH += $$PWD/../../Pobrane/SFML-2.0/include

@@ -13,8 +13,8 @@ public:
 	sf::Texture tlo_glowne;
 
 	//konstruktory z podaniem œcie¿ki 
-	grafika::grafika();
-	grafika::grafika(std::string adres_tlo);
+    grafika();
+    grafika(std::string adres_tlo);
 	//koniec konstruktorów
 };
 

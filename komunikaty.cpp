@@ -10,12 +10,12 @@ komunikaty::komunikaty()
 		czcionka_logo.loadFromFile("JFRingmaster.ttf");
 
 
-		napis_logo=L"Bagno!";
-		dowolny_klawisz=L"Uderz w dowolny klawisz!";
-		uzyj_strzalek=L"Uzyj strzlek by wybrac opcje";
-		koniec=L"Zapraszam ponownie... na Bagno!";
-		o_bagnie_opis=L"\tWitaj!\nBagno to gra która zabierze ciê w niesamowity œwiat moczar..\nTa prosta gra umozliwi ci dobr¹ zabawê ze znajmomymi.\nWykorzystano bibliotekê SFML2\nG³ównym celem stworzenia Bagna! jest zaliczenie przedmiotu PK4 :)\n\n\nMi³ej zabawy!";
-		opcje_graj=L"Podaj graczy! \nWybierz cyfre od 1-4";
+        napis_logo="Bagno!";
+        dowolny_klawisz="Uderz w dowolny klawisz!";
+        uzyj_strzalek="Uzyj strzlek by wybrac opcje";
+        koniec="Zapraszam ponownie... na Bagno!";
+        o_bagnie_opis="\tWitaj!\nBagno to gra która zabierze ciê w niesamowity œwiat moczar..\nTa prosta gra umozliwi ci dobr¹ zabawê ze znajmomymi.\nWykorzystano bibliotekê SFML2\nG³ównym celem stworzenia Bagna! jest zaliczenie przedmiotu PK4 :)\n\n\nMi³ej zabawy!";
+        opcje_graj="Podaj graczy! \nWybierz cyfre od 1-4";
 
 		ustaw_duze_logo();
 		ustaw_male_logo();

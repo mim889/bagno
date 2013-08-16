@@ -15,8 +15,8 @@ public:
 	sf::Text o_autorze;
 	sf::Text koniec;
 
-	menu::menu();
-	menu::~menu();
+    menu();
+    ~menu();
 	
 	void wyswietl_opcje_menu(ekran &ekran_glowny,int nr_opcji);
 	
