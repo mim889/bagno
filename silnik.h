@@ -8,7 +8,7 @@
 #include "czas.h"
 #include "komunikaty.h"
 #include "menu.h"
-
+#include "plansza.h"
 using namespace sf;
 class silnik
 {
@@ -18,6 +18,7 @@ private:
 public:
 	silnik();
 	ekran moj_ekran;
+    plansza moja_plansza;
 	void uruchom();
 };
 

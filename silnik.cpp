@@ -12,7 +12,7 @@ void silnik::uruchom()
 		komunikaty komunikat;
 		menu menu_bagno;
 		zdarzenie wychwyc;
-
+        moja_plansza.generuj_pola();
 		while(moj_ekran.okno_gry.isOpen())
 		{
 			
@@ -73,14 +73,16 @@ void silnik::uruchom()
 			if (wychwyc.zwroc_opcja_gry()==6)//gracze
 			{
 				moj_ekran.okno_gry.clear(sf::Color(100,100,100,255));
+                moja_plansza.rysuj(moj_ekran.okno_gry);
 				moj_ekran.okno_gry.display();
+
 			}
 			
 		}
 		
 	}
-silnik::silnik()
-	{
+silnik::silnik() :moja_plansza(20)
+{
 
 	}
 

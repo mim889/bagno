@@ -1,15 +1,15 @@
-#include "pole_plus.h"
+#include "pole_minus.h"
 
-pole_plus::pole_plus(int krok,int x1, int y1,int x2, int y2,int x3, int y3,int x4, int y4): pole(x1,y1,x2,y2,x3,y3,x4,y4)
+pole_minus::pole_minus(int krok,int x1, int y1,int x2, int y2,int x3, int y3,int x4, int y4): pole(x1, y1,x2, y2,x3, y3,x4, y4)
 {
     this->krok = krok;
-    kolor=sf::Color::Green;
+    kolor=sf::Color::Red;
 }
-pole_plus::~pole_plus()
+pole_minus::~pole_minus()
 {
 
 }
-void pole_plus::rysuj(sf::RenderWindow &okno)
+void pole_minus::rysuj(sf::RenderWindow &okno)
 {
     sf::Vertex vertices[] =
     {
@@ -24,11 +24,7 @@ void pole_plus::rysuj(sf::RenderWindow &okno)
         sf::Vertex(sf::Vector2f(x[0],y[0]), sf::Color::Black, sf::Vector2f( 0,  0)),
         sf::Vertex(sf::Vector2f(x[1],y[1]), sf::Color::Black, sf::Vector2f( 0, 0)),
         sf::Vertex(sf::Vector2f(x[2],y[2]), sf::Color::Black, sf::Vector2f(0, 0)),
-        sf::Vertex(sf::Vector2f(x[3],y[3]), sf::Color::Black, sf::Vector2f(0,  0)),
-        sf::Vertex(sf::Vector2f(x[0],y[1]), sf::Color::Black, sf::Vector2f( 0,  0)),
-        sf::Vertex(sf::Vector2f(x[1],y[0]), sf::Color::Black, sf::Vector2f( 0, 0)),
-        sf::Vertex(sf::Vector2f(x[2],y[3]), sf::Color::Black, sf::Vector2f(0, 0)),
-        sf::Vertex(sf::Vector2f(x[3],y[2]), sf::Color::Black, sf::Vector2f(0,  0))
+        sf::Vertex(sf::Vector2f(x[3],y[3]), sf::Color::Black, sf::Vector2f(0,  0))
     };
-    okno.draw(verticesLine,8,  sf::Lines);
+    okno.draw(verticesLine,4,  sf::Lines);
 }

@@ -12,6 +12,7 @@ public:
 	~plansza();
     void generuj_pola();
     pole** pola;
+    void rysuj(sf::RenderWindow &okno);
 private:
     int ile_ma_pol;
 

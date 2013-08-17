@@ -17,7 +17,9 @@ SOURCES += \
     ekran.cpp \
     dzwiek.cpp \
     czas.cpp \
-    main.cpp
+    main.cpp \
+    pole_minus.cpp \
+    pole_neutral.cpp
 
 OTHER_FILES += \
     Thumbs.db \
