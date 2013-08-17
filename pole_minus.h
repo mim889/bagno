@@ -4,6 +4,8 @@
 #include "pole.h"
 
 class pole_mins: public pole 
-{};
+{
+    sf::Color kolor;
+};
 
 #endif

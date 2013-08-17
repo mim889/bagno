@@ -5,7 +5,7 @@
 
 class pole_plus : public pole
 {
-
+    sf::Color kolor;
 };
 
 #endif

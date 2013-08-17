@@ -4,5 +4,7 @@
 #include "pole.h"
 
 class pole_neutral : public pole
-{};
+{
+    sf::Color kolor;
+};
 #endif
