@@ -8,6 +8,10 @@ public:
     virtual ~pole();
     int x[4];
     int y[4];
+    sf::Font czcionka_arial;
+    sf::Text napis;
+    sf::Color kolor_porzednika;
+    sf::Color kolor;
     virtual void rysuj(sf::RenderWindow &okno);
 };
 

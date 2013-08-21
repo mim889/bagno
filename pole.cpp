@@ -10,6 +10,7 @@ pole::pole(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4)
     y[2] = y3;
     x[3] = x4;
     y[3] = y4;
+    czcionka_arial.loadFromFile( "arial.ttf");
 }
 
 pole::~pole()

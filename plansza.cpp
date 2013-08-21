@@ -27,6 +27,7 @@ plansza::~plansza()
 void plansza::generuj_pola()
 {
     pola = new pole*[ile_ma_pol];
+    std::vector<pole> vecpola;
     int liczba;
     double x[4];
     double y[4];
@@ -37,8 +38,6 @@ void plansza::generuj_pola()
     for(int i =0; i < ile_ma_pol; i++)
     {
         liczba = rand()%12-6;
-
-        //liczba = rand()%6+1;
         x[0] = i/(double)(ile_ma_pol + 10) + 0.1; //daje wartości od 0 do 1
         x[1] = (i+1)/(double)(ile_ma_pol + 10) + 0.1;//tymi wartościami 10 i 0.1 zmieniasz położenie planszy na ekranie
         y[0] = sin(x[0]*3.14*8)*plansza_wysokosc+plansza_y;
@@ -55,6 +54,12 @@ void plansza::generuj_pola()
         {
             pola[i] = new pole_neutral(liczba,x[0]*rozmiar_ekranu,y[0],x[0]*rozmiar_ekranu,y[0]-deltay,x[1]*rozmiar_ekranu,y[1],x[1]*rozmiar_ekranu,y[1]-deltay);
         }
+    }
+    pola[0]->kolor_porzednika = pola[0]->kolor;
+    pola[ile_ma_pol-1]->kolor_porzednika = pola[ile_ma_pol-2]->kolor;
+    for(int i =1; i < ile_ma_pol-1; i++)
+    {
+        pola[i]->kolor_porzednika = pola[i-1]->kolor;
     }
 }
 void plansza::rysuj(sf::RenderWindow &okno)

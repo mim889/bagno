@@ -6,7 +6,7 @@ komunikaty::komunikaty()
 		
 		//polskie_znaki=L"¹æê³ñóœŸ¿¥ÆÊ£ÑÓŒ¯";
 
-		czcionka_arial.loadFromFile( "arial.ttf");;
+        czcionka_arial.loadFromFile( "arial.ttf");
 		czcionka_logo.loadFromFile("JFRingmaster.ttf");
 
 
