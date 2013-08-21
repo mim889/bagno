@@ -19,7 +19,8 @@ SOURCES += \
     czas.cpp \
     main.cpp \
     pole_minus.cpp \
-    pole_neutral.cpp
+    pole_neutral.cpp \
+    kostka.cpp
 
 OTHER_FILES += \
     Thumbs.db \
@@ -49,7 +50,8 @@ HEADERS += \
     generuj_tablice.h \
     ekran.h \
     dzwiek.h \
-    czas.h
+    czas.h \
+    kostka.h
 
 
 unix:!macx: LIBS += -L$$PWD/../../Pobrane/SFML-2.0/lib/ -lsfml-audio
