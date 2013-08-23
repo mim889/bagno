@@ -10,7 +10,7 @@ class zdarzenie
 	
 private:
 	
-	int uzyty_klawisz;
+    int uzyty_klawisz;
 	int opcja_gry;
 	//0 wyswietlenie logo i ekrano powitalnego
 	//1 czarny ekran z oczekiwaniem na enter
@@ -27,7 +27,7 @@ public:
 	//3. O bagnie
 	//4. Koniec
 	sf::Event zdarzenie_okna;
-	
+
     zdarzenie();
 	int obsluz_zdarzenie(ekran &ekran_glowny);
 	int zwroc_opcja_gry();

@@ -1,5 +1,5 @@
 #include "silnik.h"
-
+#include <stdlib.h>
 void silnik::uruchom()
 	{
 		moj_ekran.ustaw_rozdzielczosc_x(1024);
@@ -69,11 +69,15 @@ void silnik::uruchom()
 				moj_ekran.okno_gry.display();
 			}
 			if (wychwyc.zwroc_opcja_gry()==6)//gracze
-			{
+            {
+                if(wychwyc.zdarzenie_okna.type == sf::Event::KeyPressed
+                        && wychwyc.zdarzenie_okna.key.code == sf::Keyboard::Up)
+                {
+                    moja_plansza.ile_oczek_wylosowano = rand()%6+1;
+                }
 				moj_ekran.okno_gry.clear(sf::Color(100,100,100,255));
                 moja_plansza.rysuj(moj_ekran.okno_gry);
-				moj_ekran.okno_gry.display();
-
+                moj_ekran.okno_gry.display();
 			}
 			
 		}

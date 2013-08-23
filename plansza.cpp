@@ -60,7 +60,6 @@ void plansza::generuj_pola()
     {
         pola[i]->kolor_porzednika = pola[i-1]->kolor;
     }
-
 }
 void plansza::rysuj(sf::RenderWindow &okno)
 {

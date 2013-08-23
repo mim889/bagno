@@ -2,7 +2,6 @@
 
 kostka::kostka()
 {
-   // kostka_sprite.
     kostka_texture.loadFromFile("kostka.png");
     kostka_sprite.setTexture(kostka_texture);
 }
