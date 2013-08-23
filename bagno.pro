@@ -31,7 +31,11 @@ OTHER_FILES += \
     comic.ttf \
     CMakeLists.txt \
     bagno.pro.user \
-    arial.ttf
+    arial.ttf \
+    ../build-bagno-Desktop-Debug/kostka.png \
+    pionekzielony.png \
+    pionekzolty.png \
+    kostka.png
 
 HEADERS += \
     zdarzenie.h \

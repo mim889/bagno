@@ -68,8 +68,6 @@ void silnik::uruchom()
 				moj_ekran.okno_gry.draw(komunikat.wybor_opcji_graj);
 				moj_ekran.okno_gry.display();
 			}
-			
-			
 			if (wychwyc.zwroc_opcja_gry()==6)//gracze
 			{
 				moj_ekran.okno_gry.clear(sf::Color(100,100,100,255));

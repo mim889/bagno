@@ -27,7 +27,6 @@ plansza::~plansza()
 void plansza::generuj_pola()
 {
     pola = new pole*[ile_ma_pol];
-    std::vector<pole> vecpola;
     int liczba;
     double x[4];
     double y[4];
@@ -61,6 +60,7 @@ void plansza::generuj_pola()
     {
         pola[i]->kolor_porzednika = pola[i-1]->kolor;
     }
+
 }
 void plansza::rysuj(sf::RenderWindow &okno)
 {
@@ -68,4 +68,5 @@ void plansza::rysuj(sf::RenderWindow &okno)
     {
         pola[i]->rysuj(okno);
     }
+    moja_kostka.rysuj(ile_oczek_wylosowano,okno);
 }
