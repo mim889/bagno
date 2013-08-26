@@ -9,7 +9,7 @@ public:
     pole_minus(int krok, int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4);
     ~pole_minus();
 
-    int krok;
+
 
     void rysuj(sf::RenderWindow &okno);
 };

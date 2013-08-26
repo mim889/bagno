@@ -20,6 +20,8 @@ public:
 	ekran moj_ekran;
     plansza moja_plansza;
 	void uruchom();
+    bool gracz_nastepny_ruch;
+    int ktory_gracz_ma_ruch;
 };
 
 #endif

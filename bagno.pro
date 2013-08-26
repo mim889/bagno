@@ -1,7 +1,7 @@
 TEMPLATE = app
 CONFIG += console
 CONFIG -= app_bundle
-CONFIG -= qt
+QT       += core gui
 
 SOURCES += \
     zdarzenie.cpp \
@@ -35,7 +35,9 @@ OTHER_FILES += \
     ../build-bagno-Desktop-Debug/kostka.png \
     pionekzielony.png \
     pionekzolty.png \
-    kostka.png
+    kostka.png \
+    pionekniebieski.png \
+    pionekczerwony.png
 
 HEADERS += \
     zdarzenie.h \

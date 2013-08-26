@@ -12,6 +12,7 @@ public:
     sf::Text napis;
     sf::Color kolor_porzednika;
     sf::Color kolor;
+    int krok;
     virtual void rysuj(sf::RenderWindow &okno);
 };
 

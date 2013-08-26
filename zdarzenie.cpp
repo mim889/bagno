@@ -92,6 +92,10 @@
 					{
 					std::cout << "Wybrano 1";
 					ilosc_graczy=1;
+                    tablica_graczy[0].ustaw_dane_gracza(0,1);
+                    tablica_graczy[1].ustaw_dane_gracza(1,0);
+                    tablica_graczy[2].ustaw_dane_gracza(2,0);
+                    tablica_graczy[3].ustaw_dane_gracza(3,0);
 					opcja_gry=6;
 					return 0;
 					}
@@ -100,6 +104,10 @@
 					{
 					std::cout << "Wybrano 2";
 					ilosc_graczy=2;
+                    tablica_graczy[0].ustaw_dane_gracza(0,1);
+                    tablica_graczy[1].ustaw_dane_gracza(1,1);
+                    tablica_graczy[2].ustaw_dane_gracza(2,0);
+                    tablica_graczy[3].ustaw_dane_gracza(3,0);
 					opcja_gry=6;
 					return 0;
 					}
@@ -108,6 +116,10 @@
 					{
 					std::cout << "Wybrano 3";
 					ilosc_graczy=3;
+                    tablica_graczy[0].ustaw_dane_gracza(0,1);
+                    tablica_graczy[1].ustaw_dane_gracza(1,1);
+                    tablica_graczy[2].ustaw_dane_gracza(2,1);
+                    tablica_graczy[3].ustaw_dane_gracza(3,0);
 					return 0;
 					}
 					break;
@@ -115,6 +127,10 @@
 					{
 					std::cout << "Wybrano 4";
 					ilosc_graczy=4;
+                    tablica_graczy[0].ustaw_dane_gracza(0,1);
+                    tablica_graczy[1].ustaw_dane_gracza(1,1);
+                    tablica_graczy[2].ustaw_dane_gracza(2,1);
+                    tablica_graczy[3].ustaw_dane_gracza(3,1);
 					opcja_gry=6;
 					return 0;
 					}
@@ -131,15 +147,15 @@
 			if(opcja_gry==6 && zdarzenie_okna.type==sf::Event::TextEntered)
 				{
 					
-					generuj_tablice <gracz,4> tablica_graczy;
 
-					
 
-					tablica_graczy[0].dodaj_znak((char)zdarzenie_okna.text.unicode);
+                    //tutaj chyba powinno być wpisywanie imienia ale nie robie tego....... :)
+
+                    //tablica_graczy[0].dodaj_znak((char)zdarzenie_okna.text.unicode);
 					
 					
 					//std::cout << (char)zdarzenie_okna.text.unicode;
-					std::cout << tablica_graczy[0].nazwa;
+                    //std::cout << tablica_graczy[0].nazwa;
 					
 					return 0;
 				}
@@ -155,4 +171,4 @@
 			void zdarzenie::ustaw_opcja_gry(int nr_opcji)
 			{
 				opcja_gry=nr_opcji;
-			}
+            }

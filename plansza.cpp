@@ -14,6 +14,7 @@ plansza::plansza(int ile_ma_pol)
     {
         this->ile_ma_pol = 10;
     }
+    ile_oczek_wylosowano = 0;
 }
 plansza::~plansza()
 {
@@ -39,8 +40,8 @@ void plansza::generuj_pola()
         liczba = rand()%12-6;
         x[0] = i/(double)(ile_ma_pol + 10) + 0.1; //daje wartości od 0 do 1
         x[1] = (i+1)/(double)(ile_ma_pol + 10) + 0.1;//tymi wartościami 10 i 0.1 zmieniasz położenie planszy na ekranie
-        y[0] = sin(x[0]*3.14*8)*plansza_wysokosc+plansza_y;
-        y[1] = sin(x[1]*3.14*8)*plansza_wysokosc+plansza_y;
+        y[0] = cos(x[0]*3.14*8)*plansza_wysokosc+plansza_y;
+        y[1] = cos(x[1]*3.14*8)*plansza_wysokosc+plansza_y;
         if(liczba > 0)
         {
             pola[i] = new pole_plus(liczba,x[0]*rozmiar_ekranu,y[0],x[0]*rozmiar_ekranu,y[0]-deltay,x[1]*rozmiar_ekranu,y[1],x[1]*rozmiar_ekranu,y[1]-deltay);

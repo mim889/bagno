@@ -3,7 +3,8 @@
 
 #include <SFML/Graphics.hpp>
 #include "ekran.h"
-
+#include "generuj_tablice.h"
+#include "gracz.h"
 
 class zdarzenie 
 {
@@ -17,7 +18,7 @@ private:
 	//2 menu
 	//3 koniec z menu
 	//
-	int ilosc_graczy;
+
 	
 public:
 	int pozycja_menu;
@@ -27,10 +28,11 @@ public:
 	//3. O bagnie
 	//4. Koniec
 	sf::Event zdarzenie_okna;
-
+    int ilosc_graczy;
     zdarzenie();
 	int obsluz_zdarzenie(ekran &ekran_glowny);
 	int zwroc_opcja_gry();
 	void ustaw_opcja_gry(int nr_opcji);
+    generuj_tablice <gracz,4> tablica_graczy;
 };
 #endif
